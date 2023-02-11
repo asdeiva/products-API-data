@@ -29,6 +29,7 @@
 }
 .products-display {
   display: flex;
+  justify-content: center;
   flex-direction: column;
 }
 .products-display-tittle h1 {
