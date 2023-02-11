@@ -46,3 +46,16 @@ const url = "https://dummyjson.com/products";
   
   }
   
+  // navbar transition effect
+  
+   const changeColor = () => {
+    let navclass= document.getElementById('navbar')
+     if (window.scrollY >= 100){
+      navclass.classList.remove('navbar')
+      navclass.classList.add("navbar-bg")
+    } else {
+      navclass.classList.remove('navbar-bg')
+      navclass.classList.add("navbar")
+    }
+  }
+  window.addEventListener("scroll", changeColor);
